@@ -13,66 +13,76 @@
         <fieldset>
             <legend>Personal Information</legend>
 
+           <div> 
             <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="first_name_field">
-            <br>
+            <input type="first" id="fname" name="first_name_field">
+           </div> 
 
+           <div>
             <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="last_name_field">
-            <br>
+            <input type="last" id="lname" name="last_name_field">
+           </div>
 
+           <div>
             <label for="phone">Phone:</label>
-            <input type="text" id="phone" name="phone_field">
-            <br>
+            <input type="tel" id="phone" name="phone_field">
+           </div> 
 
+           <div>
             <label for="email">Email:</label>
-            <input type="text" id="email" name="email_field">
-            <br>
+            <input type="email" id="email" name="email_field">
+           </div> 
 
+           <div>
             <p>Gender:</p>
 
             <input type="radio" id="male" name="gender_field" value="male">
             <label for="male">Male</label>
 
             <input type="radio" id="female" name="gender_field" value="female">
-            <label for="male">Female</label>
-
-            <br>
-
+            <label for="female">Female</label>
+           </div>
+            
+           <div>
             <label for="age">Age:</label>
             <select id="age" name="age_field">
                 <option value="under18">Under 18</option>
                 <option value="18to25">18-25</option>
                 <option value="26to40">26-40</option>
                 <option value="over40">Over 40</option>
-
             </select>
+           </div>
 
         </fieldset>
 
         <fieldset>
             <legend>Availability</legend>
-
-            <p>Select Available Days:</p>
+           <div> 
+            <h3>Select Available Days:</h3>
 
             <input type="checkbox" name="available_field[]" value="monday"> Monday<br>
             <input type="checkbox" name="available_field[]" value="tuesday"> Tuesday<br>
             <input type="checkbox" name="available_field[]" value="wednesday"> Wednesday<br>
             <input type="checkbox" name="available_field[]" value="thursday"> Thursday<br>
             <input type="checkbox" name="available_field[]" value="friday"> Friday<br>
-            <input type="checkbox" name="available_field[]" value="Saturday"> Saturday<br>
-            <input type="checkbox" name="available_field[]" value="Sunday"> Sunday<br><br>
+            <input type="checkbox" name="available_field[]" value="saturday"> Saturday<br>
+            <input type="checkbox" name="available_field[]" value="sunday"> Sunday<br><br>
+           </div>
 
+           <div>
             <label for="comments">Additional Comments:</label><br>
             <textarea id="comments" name="comments_field" rows="5" cols="40"></textarea>
+           </div>
 
         </fieldset>
 
         <input type="hidden" name="hidden_field" value="YOUR FULL NAME">
 
-        <br><br>
+       <div> 
         <input type="submit" value="Submit">
-
+       </div>
+       
+       
         </form>
 
             
